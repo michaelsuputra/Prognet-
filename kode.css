@@ -1,0 +1,18 @@
+body {
+ margin: 0;
+ padding: 0;
+ min-width: 100%;
+ min-height: 100vh;
+}
+.element {
+ background-color: #003940;
+}
+.main-profile .card {
+ min-height: 90vh;
+}
+.profile-desc .card {
+ min-height: 43.5vh;
+}
+.main-profile .card img {
+ border: 5px solid #383838;
+}
