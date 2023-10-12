@@ -7,7 +7,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e4f0e4; /* Light green background */
+            background: linear-gradient(135deg, #f06, #09f, #6f0, #f60); /* Gradient background */
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
             text-align: center;
         }
 
@@ -28,6 +30,18 @@
             text-align: left;
             margin: 5px 0;
             color: #333; /* Dark gray text */
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
     </style>
 </head>
