@@ -7,12 +7,12 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #e4f0e4; /* Light green background */
             text-align: center;
         }
 
         .container {
-            background-color: #fff;
+            background-color: #f7f7f7; /* Light gray background */
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             max-width: 400px;
@@ -21,12 +21,13 @@
         }
 
         h1 {
-            color: #007BFF;
+            color: #009933; /* Dark green title text */
         }
 
         p {
             text-align: left;
             margin: 5px 0;
+            color: #333; /* Dark gray text */
         }
     </style>
 </head>
