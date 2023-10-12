@@ -9,12 +9,14 @@
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
         .container {
             background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
             max-width: 400px;
             margin: 20px auto;
             padding: 20px;
@@ -27,6 +29,16 @@
         p {
             text-align: left;
             margin: 5px 0;
+        }
+        
+        .result {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .error {
+            color: #FF0000;
         }
     </style>
 </head>
@@ -42,14 +54,14 @@
             $email = $_POST["email"];
 
             echo "<h1>Hasil Formulir Biodata</h1>";
-            echo "<p><strong>Nama Lengkap:</strong> $nama</p>";
-            echo "<p><strong>NIM:</strong> $nim</p>";
-            echo "<p><strong>Alamat:</strong> $alamat</p>";
-            echo "<p><strong>Jenis Kelamin:</strong> $jenis_kelamin</p>";
-            echo "<p><strong>Jurusan:</strong> $jurusan</p>";
-            echo "<p><strong>Email:</strong> $email</p>";
+            echo "<p class='result'><strong>Nama Lengkap:</strong> $nama</p>";
+            echo "<p class='result'><strong>NIM:</strong> $nim</p>";
+            echo "<p class='result'><strong>Alamat:</strong> $alamat</p>";
+            echo "<p class='result'><strong>Jenis Kelamin:</strong> $jenis_kelamin</p>";
+            echo "<p class='result'><strong>Jurusan:</strong> $jurusan</p>";
+            echo "<p class='result'><strong>Email:</strong> $email</p>";
         } else {
-            echo "<p>Terjadi kesalahan dalam pengiriman formulir.</p>";
+            echo "<p class='error'>Terjadi kesalahan dalam pengiriman formulir.</p>";
         }
         ?>
     </div>
